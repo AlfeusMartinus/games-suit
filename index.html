@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit Games🤌 | DOM Manipulation</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="asset/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="main">
+        <div class="scoreboard">
+            <h2 class="score-info" id="scoreInfo">Pilih Jari Mu!</h2>
+            <h3 class="score-message" id="scoreMessage">Raih <b>5 Poin</b> Untuk Memenangkan Pertandingan</h3>
+            <div class="scores-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">❌</div>
+                    <p class="score" id="playerScore">Kamu: 0</p>
+                </div>
+                <div class="score-box">
+                    <div class="sign" id="computerSign">❌</div>
+                    <p class="score" id="computerScore">Komputer: 0</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-square" id="rockBtn">
+                <div class="sign">✊</div>
+            </button>
+            <button class="btn btn-square" id="paperBtn">
+                <div class="sign">✋</div>
+            </button>
+            <button class="btn btn-square" id="scissorsBtn">
+                <div class="sign">✌</div>
+            </button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Alfeus Martinus | 2204148 | RPL 4C</p>
+    </footer>
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Main Lagi</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
